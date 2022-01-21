@@ -35,7 +35,6 @@ class WebDriver():
         self.username = username
         self.password = password
         self.driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options) 
-        # self.driver = webdriver.Chrome(options=chrome_options)
 
     def get_current_url(self):
         '''
@@ -104,7 +103,6 @@ class WebDriver():
         job_button.click()
 
         sleep(2)
-        # search_box = self.driver.find_element_by_class_name('jobs-search-box__text-input.jobs-search-box__keyboard-text-input')
         search_box = self.driver.find_elements_by_class_name('jobs-search-box__text-input')[0]
         search_box.send_keys(job)
 
