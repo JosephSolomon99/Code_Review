@@ -1,4 +1,4 @@
-# Linkedin-Scraper-Project
+# Data Collection Project
 
 A selenium based web scraper that scrapes job advertisement data from Linkedin. 
 Can search for any job and location, scrapes all 40 visible pages and sends data to AWS RDS.
